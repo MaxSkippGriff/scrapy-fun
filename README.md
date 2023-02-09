@@ -36,13 +36,15 @@ strip() method is used to remove whitespace.}_
 * Install botocore
 * Update settings.py with:
 
-      ```FEEDS = {
+```
+FEEDS = {
          "s3://scrapy-playbook/%(name)s/%(name)s_%(time)s.jsonl": {
          "format": "jsonlines",
          }
       }
-      AWS_ACCESS_KEY_ID = 'YOUR_AWS_ACCESS_KEY_ID'
-      AWS_SECRET_ACCESS_KEY = 'YOUR_AWS_SECRET_ACCESS_KEY'```
+AWS_ACCESS_KEY_ID = 'YOUR_AWS_ACCESS_KEY_ID'
+AWS_SECRET_ACCESS_KEY = 'YOUR_AWS_SECRET_ACCESS_KEY'
+```
 * Scraped data saved in JSON files will now be saved to S3 bucket
 
 
