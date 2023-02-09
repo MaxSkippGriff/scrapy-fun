@@ -20,9 +20,9 @@
 
 ## Moving between pages
 
-After inspecting start_urls I discovered there is no pagination or 'next page'
- button but instead alphabetical buttons A-Z, so in the parse method I get all
- alphabetical button values (A-Z) and add each element value as a param to the URL.
+There is no pagination or 'next page' button but there are alphabetical buttons A-Z, 
+so in the parse method I get all alphabetical button values (A-Z) and add each element
+value as a param to the URL.
 
 The updated URL is then sent to the parse_page method which iterates through each
 row0 element using the get() method to scrape the title, source_url, and date. The
