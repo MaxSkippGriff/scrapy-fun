@@ -13,10 +13,17 @@
 3. Activate virtual environment 
 
     ``` source env/bin/activate ```
-4. Dependencies are saved in the Pipfile. To install:
+4. Dependencies are saved in the Pipfile. To install, run the following command:
 
     ``` pipenv install ```
 
+## Running scraper
+
+To run the scraper, run the following command:
+
+```scrapy crawl scrapelegislation -o <filename>.json```
+
+You can export data to json or csv.
 
 ## Moving between pages
 
