@@ -8,10 +8,13 @@
 
 1. Fork or clone project
 2. Create virtual environment
+
     ``` python3 -m venv env ```
 3. Activate virtual environment 
+
     ``` source env/bin/activate ```
 4. Dependencies are saved in the Pipfile. To install:
+
     ``` pipenv install ```
 
 
@@ -32,6 +35,7 @@ strip() method is used to remove whitespace.}_
 * Add and create user
 * Install botocore
 * Update settings.py with:
+
       ```FEEDS = {
          "s3://scrapy-playbook/%(name)s/%(name)s_%(time)s.jsonl": {
          "format": "jsonlines",
