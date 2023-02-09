@@ -44,9 +44,13 @@ class ScrapelegislationSpider(scrapy.Spider):
             # 4. Ensure that the source_url is complete, i.e starts with "http://laws.bahamas.gov.bs"
             source_url = ("http://laws.bahamas.gov.bs" + href)
 
+            # 5. Extract the date from the row and strip whitespace
+            date = row.css('td.commencement.hidden-phone ::text').get().strip()
+
             yield {
                 "title": title,
-                "source_url": source_url
+                "source_url": source_url,
+                "date": date
             }
 
 
