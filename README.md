@@ -19,7 +19,7 @@
 
 ## Running scraper
 
-To run the scraper, run the following command:
+To run the scraper, navigate to the directory containing scrapy.cfg and run the following command:
 
 ```scrapy crawl scrapelegislation -o <filename>.json```
 
