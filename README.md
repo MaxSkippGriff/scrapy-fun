@@ -7,6 +7,10 @@
 
 ## Scraping Bahamas legislation with Scrapy Spider
 
+This is a work in progress. At the moment, it scrapes Bahamas legislation and saves
+it in a AWS S3 bucket. But Bahamas legislation is quite dull, so I am going to
+scrape more interesting content with Django integration.
+
 ## Instructions
 
 1. Fork or clone project
@@ -67,5 +71,5 @@ AWS_SECRET_ACCESS_KEY = 'YOUR_AWS_SECRET_ACCESS_KEY'
 
 - Amend loop through tr.row0 to include all rows
 - Save data in database
-- Integrate with Django 
+- Integrate with Django
 - Display scraped data on single page app
