@@ -1,7 +1,7 @@
-## Scraping Bahamasr
+## Scraping Bahamas
 
 <p align="center">
-    <img width="450" src="../main/images/bahamas.jpg" alt="cellular">
+    <img width="400" src="../main/images/bahamas.jpg" alt="cellular">
 </p>
 
 
@@ -62,3 +62,10 @@ AWS_SECRET_ACCESS_KEY = 'YOUR_AWS_SECRET_ACCESS_KEY'
 
 * Python 3.8
 * Scrapy 2.7
+
+## To do
+
+- Amend loop through tr.row0 to include all rows
+- Save data in database
+- Integrate with Django 
+- Display scraped data on single page app
